@@ -1,18 +1,7 @@
 import React from 'react';
 
 import './index.css';
-
-const USDFormatter = new Intl.NumberFormat('en-US', {
-  style: 'currency',
-  currency: 'USD',
-  minimumFractionDigits: 2,
-});
-
-const BYNFormatter = new Intl.NumberFormat('en-US', {
-  style: 'currency',
-  currency: 'BYN',
-  minimumFractionDigits: 2,
-});
+import { BYNFormatter, USDFormatter } from '../../utils/formatters';
 
 export const Card = ({ ad }) => (
   <div
