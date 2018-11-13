@@ -5,6 +5,8 @@
 
   background-position: center;
   background-size: cover;
+
+  overflow: hidden;
 }
 
 .card__content {
