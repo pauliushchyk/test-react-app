@@ -1,0 +1,44 @@
+.card {
+  position: relative;
+
+  display: grid;
+  align-content: flex-end;
+
+  padding: 0.5em;
+
+  min-height: 9.75em;
+
+  border-radius: 0.25em;
+
+  background-position: center;
+  background-size: cover;
+}
+
+.card__title {
+  margin: 0;
+
+  color: #ffffff;
+  font-family: Helvetica, sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.card__prices {
+  display: grid;
+  grid-column-gap: 0.5em;
+  grid-auto-flow: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.card__price {
+  color: #ffffff;
+  font-family: Helvetica, sans-serif;
+  font-size: 0.875em;
+  line-height: 1.5em;
+}
+
+.card__price--small {
+  font-size: 0.75em;
+  line-height: 1.375em;
+}
