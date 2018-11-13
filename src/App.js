@@ -2,21 +2,15 @@ import React, { Component, StrictMode } from 'react';
 import { Provider } from 'react-redux';
 
 import './App.css';
-import { Card } from './components/Card';
+import { Ads } from './containers/Ads';
+import { store } from './store';
 
 class App extends Component {
   render() {
     return (
-      <Provider>
+      <Provider store={store}>
         <StrictMode>
-          <div className="ads">
-            <h1 className="ads__title">VIP объявления</h1>
-            <div className="ads__cards">
-              <Card />
-              <Card />
-              <Card />
-            </div>
-          </div>
+          <Ads />
         </StrictMode>
       </Provider>
     );
