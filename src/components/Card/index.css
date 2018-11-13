@@ -1,6 +1,13 @@
 .card {
   position: relative;
 
+  border-radius: 0.25em;
+
+  background-position: center;
+  background-size: cover;
+}
+
+.card__content {
   display: grid;
   align-content: flex-end;
 
@@ -8,10 +15,7 @@
 
   min-height: 9.75em;
 
-  border-radius: 0.25em;
-
-  background-position: center;
-  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .card__title {
@@ -35,10 +39,12 @@
   color: #ffffff;
   font-family: Helvetica, sans-serif;
   font-size: 0.875em;
+  font-weight: bold;
   line-height: 1.5em;
 }
 
 .card__price--small {
   font-size: 0.75em;
+  font-weight: normal;
   line-height: 1.375em;
 }
